@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gramentheme">
+    <meta name="description" content="Portfolio of Simbarashe Gunundu - Software Engineer showcasing projects and work">
+    <!-- ======== Page title ============ -->
+    <title>Portfolio - Simbarashe Gunundu | Software Engineer</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Custom Logo Styles -->
+    <style>
+        /* Header logo sizing */
+        .header-logo img, .logo-2 img {
+            max-height: 50px;
+            width: auto;
+        }
+        
+        /* Sidebar/Offcanvas logo sizing */
+        .offcanvas__logo img {
+            max-height: 45px;
+            width: auto;
+        }
+        
+        /* Footer logo sizing */
+        .footer-logo img {
+            max-height: 60px;
+            width: auto;
+        }
+        
+        /* Ensure logos maintain aspect ratio */
+        .logo img, .offcanvas__logo img, .footer-logo img {
+            object-fit: contain;
+        }
+        
+        /* Portfolio image sizing and fitting */
+        .project-items-2 .images {
+            overflow: hidden;
+            border-radius: 10px;
+            height: 300px;
+        }
+        
+        .project-items-2 .images img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-items-2:hover .images img {
+            transform: scale(1.05);
+        }
+        
+        /* Ensure consistent height for different grid sizes */
+        .col-xl-7 .project-items-2 .images {
+            height: 350px;
+        }
+        
+        .col-xl-5 .project-items-2 .images,
+        .col-md-6 .project-items-2 .images {
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body class="body-color">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                 <span data-text-preloader="B" class="letters-loading">
+                    B
+                </span>
+                 <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="R" class="letters-loading">
+                    R
+                </span>
+                 <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="H" class="letters-loading">
+                    H
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/sg_logo_white.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        Passionate Software Engineer with expertise in building scalable applications and innovative solutions using modern technologies.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Zimbabwe</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:s.gunundu00@gmail.com"><span
+                                            class="mailto:s.gunundu00@gmail.com">s.gunundu00@gmail.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mon-Fri, 09am-05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+263778142466">+263778142466</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4 text-center">
+                            <a href="contact.html" class="theme-btn">
+                                Get In Touch <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="https://github.com/Simba26git" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/simbarashe-gunundu-02320a250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=and" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/img/logo/sg_logo_white.svg" alt="logo-img">
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="assets/img/logo/sg_logo_white.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html" class="border-none">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <a href="contact.html" class="theme-btn"> Hire Me
+                            <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb-Section Start -->
+    <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/breadcrumb/bg.jpg);">
+        <div class="star-shape float-bob-x">
+            <img src="assets/img/shape/star.png" alt="img">
+        </div>
+        <div class="arrow-shape">
+            <img src="assets/img/breadcrumb/arrow.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h2>Portfolio</h2>
+                    <ul class="breadcrumb-list">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="active">Portfolio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Section Start -->
+    <section class="project-standard-section section-padding fix section-bg">
+        <div class="container">
+            <div class="project-standard-wrapper">
+                <div class="row">
+                    <div class="col-xl-7 col-md-6">
+                        <div class="project-items-2 mt-0 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="images">
+                                <img src="assets/img/threejs.png" alt="Three.js Portfolio">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Web Development / 3D</span>
+                                    <h4><a href="https://threejs-portfolio-main-six.vercel.app/" target="_blank">Interactive Three.js Portfolio</a>
+                                    </h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://threejs-portfolio-main-six.vercel.app/" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="project-items-2 mt-md-0 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="images">
+                                <img src="assets/img/zentryc.png" alt="Zentry Clone">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Web Development / UI/UX</span>
+                                    <h4><a href="https://github.com/Simba26git/award-winning-ui" target="_blank">Zentry Clone - Award Winning UI</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/award-winning-ui" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="images">
+                                <img src="assets/img/trustlanse.png" alt="TrustLance">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Web Development / Platform</span>
+                                    <h4><a href="https://github.com/Simba26git/trust_lance" target="_blank">TrustLance - Freelance Platform</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/trust_lance" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="images">
+                                <img src="assets/img/pos.png" alt="aPOS System">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Software Development / POS</span>
+                                    <h4><a href="https://github.com/Simba26git/aPOS" target="_blank">aPOS - Point of Sale System</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/aPOS" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay="1s">
+                            <div class="images">
+                                <img src="assets/img/automations.png" alt="Automations">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Automation / Scripts</span>
+                                    <h4><a href="https://github.com/Simba26git/automations" target="_blank">Automation Scripts & Tools</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/automations" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay="1.2s">
+                            <div class="images">
+                                <img src="assets/img/call_center.png" alt="Call Center Dashboard">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Dashboard / Analytics</span>
+                                    <h4><a href="https://github.com/Simba26git/call_center_dashboard" target="_blank">Call Center Dashboard</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/call_center_dashboard" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay="1.4s">
+                            <div class="images">
+                                <img src="assets/img/postpilot.png" alt="PostPilot">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Web Development / Automation</span>
+                                    <h4><a href="https://github.com/Simba26git/postpilot" target="_blank">PostPilot - Social Media Automation</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/postpilot" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay="1.6s">
+                            <div class="images">
+                                <img src="assets/img/podcaster.png" alt="Podcaster">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Web Development / Media</span>
+                                    <h4><a href="https://podcastr-main.vercel.app/" target="_blank">Podcaster - Podcast Platform</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://podcastr-main.vercel.app/" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section fix">
+       <div class="bg-shape">
+        <img src="assets/img/footer/bg-shape.png" alt="img">
+       </div>
+       <div class="mycustom-marque">
+              <div class="scrolling-wrap style-2">
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+           </div>
+       </div>
+        <div class="container">
+            <div class="footer-widget-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-item">
+                            <a href="index.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+                                <img src="assets/img/logo/sg_logo_white.svg" alt="img">
+                            </a>
+                            <ul class="footer-list-items wow fadeInUp" data-wow-delay=".5s">
+                                <li>
+                                    <a href="about.html">ABOUT ME</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">PORTFOLIO</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT ME</a>
+                                </li>
+                            </ul>
+                            <ul class="social-icon wow fadeInUp" data-wow-delay=".3s">
+                                <li>
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/Simba26git" target="_blank">GitHub</a>
+                                </li>
+                                <li>
+                                   <i class="fa-brands fa-linkedin-in"></i>
+                                    <a href="https://www.linkedin.com/in/simbarashe-gunundu-02320a250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=and" target="_blank">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        Copyright © <span>Grameentheme</span>
+                    </p>
+                    <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="contact.html">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Typed Js >>-->
+    <script src="assets/js/typed.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

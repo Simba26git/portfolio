@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gramentheme">
+    <meta name="description" content="Simbarashe Gunundu - Software Engineer Portfolio">
+    <!-- ======== Page title ============ -->
+    <title>SIMBARASHE - Software Engineer Portfolio</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Custom Logo Styles -->
+    <style>
+        /* Header logo sizing */
+        .header-logo img, .logo-2 img {
+            max-height: 50px;
+            width: auto;
+        }
+        
+        /* Sidebar/Offcanvas logo sizing */
+        .offcanvas__logo img {
+            max-height: 45px;
+            width: auto;
+        }
+        
+        /* Footer logo sizing */
+        .footer-logo img {
+            max-height: 60px;
+            width: auto;
+        }
+        
+        /* Ensure logos maintain aspect ratio */
+        .logo img, .offcanvas__logo img, .footer-logo img {
+            object-fit: contain;
+        }
+        
+        /* Reduce gap between image and content in featured portfolio */
+        .project-section .project-wrapper .project-items .content {
+            padding: 4px 20px 0 !important;
+            margin-top: 0 !important;
+        }
+        
+        /* Alternative selector for featured portfolio */
+        .project-items .content {
+            padding-top: 4px !important;
+        }
+    </style>
+</head>
+
+<body class="body-color">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                 <span data-text-preloader="B" class="letters-loading">
+                    B
+                </span>
+                 <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="R" class="letters-loading">
+                    R
+                </span>
+                 <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="H" class="letters-loading">
+                    H
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/sg_logo_white.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        Passionate Software Engineer with expertise in building scalable applications and innovative solutions using modern technologies.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Zimbabwe</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:s.gunundu00@gmail.com"><span
+                                            class="mailto:s.gunundu00@gmail.com">s.gunundu00@gmail.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+263778142466">+263778142466</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4 text-center">
+                            <a href="contact.html" class="theme-btn">
+                                Consultation <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="https://github.com/Simba26git" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/simbarashe-gunundu-02320a250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=and" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/img/logo/sg_logo_white.svg" alt="logo-img">
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="assets/img/logo/sg_logo_white.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="active">
+                                        <a href="index.html" class="border-none">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <a href="contact.html" class="theme-btn"> Hire Me
+                            <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Start -->
+    <section class="hero-section hero-1 fix">
+        <div class="arrow-right-shape">
+            <img src="assets/img/hero/bg-1.png" alt="img">
+        </div>
+        <div class="arrow-shape float-bob-y">
+            <img src="assets/img/hero/angle-arrow.png" alt="img">
+        </div>
+         <div class="arrow-up">
+            <img src="assets/img/hero/arrow.png" alt="img">
+        </div>
+        <div class="hero-info">
+            <a href="https://github.com/Simba26git" target="_blank" class="active">GitHub</a>
+            <a href="https://www.linkedin.com/in/simbarashe-gunundu-02320a250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=and" target="_blank">LinkedIn</a>
+        </div>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                       <span class="text-2"><img src="assets/img/shape/star-2.png" alt="img">Hey There!</span>
+                        <h1>I'm <span class="style-2">SIMBARASHE</span> <br> 
+                            <strong class="type-text"></strong></h1>
+                        <div class="hero-bottom">
+                            <p>
+                                I'm a passionate Software Engineer with 5+ years of development experience and 1 year of professional working experience. I enjoy building innovative solutions and working with cutting-edge technologies to create meaningful digital experiences for my 20+ clients.
+                            </p>
+                            <div class="hero-btn-wrapper">
+                            <a href="assets/My resume.pdf" class="theme-btn" download="Simbarashe_Gunundu_Resume.pdf">Download Resume
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section Start -->
+    <section class="marquee-section section-bg fix">
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                </div>
+
+                <!-- duplicate content for seamless scroll -->
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>THE BEST SOLUTION</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about-section fix section-padding">
+        <div class="container">
+                        <div class="section-title-area">
+                <div class="section-title">
+                    <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img">About Me</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">
+                        Solving Problems With <br> lntuitive
+                        <span>Design</span>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        I'm a passionate Software Engineer working with modern technologies and frameworks. I believe that progress comes from pushing boundaries and creating innovative solutions. 
+                    </p>
+                     <a href="about.html" class="theme-btn">More About ME
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-wrapper-1">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="about-box-item">
+                            <h2><span class="count">5</span>+</h2>
+                            <h3>
+                                Years as <br>
+                                 <span>Developer</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="about-box-item style-2">
+                            <h2><span class="count">20</span>+</h2>
+                            <h3>
+                                Happy <br>
+                                 <span>Clients</span>
+                            </h3>
+                        </div>
+                    </div>
+                     <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="about-box-item">
+                            <h2><span class="count">20</span>+</h2>
+                            <h3>
+                                Projects <br>
+                                 <span>Completed</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section Start -->
+    <section class="service-section service-1 section-padding section-bg fix">
+        <div class="random-shape float-bob-y">
+            <img src="assets/img/shape/random-shape.png" alt="img">
+        </div>
+        <div class="container">
+            <h2 class="sub-title">MY SERVICES</h2>
+            <div class="section-title text-center">
+                <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img">My Services<img src="assets/img/shape/star-2.png" alt="img"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">The Ease-<span>Service</span> Process</h2>
+            </div>
+            <div class="service-wrapper">
+                <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="head">
+                        <span>01</span>
+                        <h4><a href="service-details.html">Mobile App Development</a></h4>
+                    </div>
+                    <div class="text">
+                        <p>I specialize in creating intuitive mobile applications with modern design principles <br>
+                            and cutting-edge development practices.</p>
+                    </div>
+                    <div class="link-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="service-details.html">Read More</a>
+                    </div>
+                </div>
+                <div class="services-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="head">
+                        <span>02</span>
+                        <h4><a href="service-details.html">Web Design</a></h4>
+                    </div>
+                    <div class="text">
+                        <p>I create responsive and user-friendly websites using modern frameworks,
+                            <br> focusing on performance and user experience.
+                        </p>
+                    </div>
+                    <div class="link-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="service-details.html">Read More</a>
+                    </div>
+                </div>
+                <div class="services-item wow fadeInUp" data-wow-delay=".6s">
+                    <div class="head">
+                        <span>03</span>
+                        <h4><a href="service-details.html">UI/UX Design</a></h4>
+                    </div>
+                    <div class="text">
+                        <p>I design intuitive user interfaces and experiences that prioritize usability <br>
+                            and engage users effectively.</p>
+                    </div>
+                    <div class="link-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="service-details.html">Read More</a>
+                    </div>
+                </div>
+                                <div class="services-item mb-0 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="head">
+                        <span>04</span>
+                        <h4><a href="service-details.html">Visual Design</a></h4>
+                    </div>
+                    <div class="text">
+                        <p>I create compelling visual designs that communicate effectively and <br>
+                            enhance brand identity across digital platforms.</p>
+                    </div>
+                    <div class="link-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="service-details.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section Start -->
+    <section class="project-section section-padding fix">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img">Project</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">My Featured <span>Portfolio</span></h2>
+                </div>
+                <a href="portfolio.html" class="theme-btn wow fadeInUp" data-wow-delay=".4s">
+                    View All Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="project-wrapper">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay=".3s">
+                            <div class="image">
+                                <img src="assets/img/threejs.png" alt="Three.js Portfolio" style="width: 100%; height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="content" style="padding: 4px 20px 0 !important;">
+                                <div class="text">
+                                    <span>3D / Web Development</span>
+                                    <h4><a href="https://threejs-portfolio-main-six.vercel.app/" target="_blank">Interactive Three.js Portfolio</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://threejs-portfolio-main-six.vercel.app/" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="project-items wow img-custom-anim-top" data-wow-delay=".6s">
+                            <div class="image">
+                                <img src="assets/img/postpilot.png" alt="PostPilot" style="width: 100%; height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="content" style="padding: 4px 20px 0 !important;">
+                                <div class="text">
+                                    <span>Web Development / Automation</span>
+                                    <h4><a href="https://github.com/Simba26git/postpilot" target="_blank">PostPilot - Social Media Automation</a></h4>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/Simba26git/postpilot" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section Start -->
+    <section class="experience-section section-padding section-bg fix">
+        <div class="container">
+            <div class="section-title  text-center">
+                <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img">My Experience<img src="assets/img/shape/star-2.png" alt="img"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">My Work Experience</h2>
+            </div>
+            <div class="experience-wrapper">
+                <div class="experience-items wow fadeInUp" data-wow-delay=".2s">
+                    <span>2024 - Present</span>
+                    <h4>Software Engineer</h4>
+                    <h6>Freelance / Contract Work</h6>
+                </div>
+                <div class="experience-items wow fadeInUp" data-wow-delay=".4s">
+                    <span>2023 - 2024</span>
+                    <h4>Full Stack Developer</h4>
+                    <h6>Multiple Client Projects</h6>
+                </div>
+                <div class="experience-items wow fadeInUp" data-wow-delay=".6s">
+                    <span>2022 - 2023</span>
+                    <h4>Frontend Developer</h4>
+                    <h6>React & TypeScript Projects</h6>
+                </div>
+                <div class="experience-items wow fadeInUp" data-wow-delay=".8s">
+                    <span>2021 - 2022</span>
+                    <h4>Web Developer</h4>
+                    <h6>JavaScript & Node.js Development</h6>
+                </div>
+            </div>
+            <div class="client-wrapper">
+                <div class="client-items">
+                    <div class="client-item">
+                        <div class="icon">
+                            <img src="assets/img/client/1.svg" alt="img">
+                        </div>
+                        <h4 class="number"><span class="count">90</span>% <span class="text">JavaScript</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon">
+                            <img src="assets/img/client/2.svg" alt="img">
+                        </div>
+                        <h4 class="number"><span class="count">85</span>% <span class="text">TypeScript</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon">
+                            <img src="assets/img/client/3.svg" alt="img">
+                        </div>
+                        <h4 class="number"><span class="count">80</span>% <span class="text">React</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon">
+                            <img src="assets/img/client/4.svg" alt="img">
+                        </div>
+                        <h4 class="number"><span class="count">75</span>% <span class="text">Node.js</span></h4>
+                    </div>
+                    <div class="client-item">
+                        <div class="icon">
+                            <img src="assets/img/client/5.svg" alt="img">
+                        </div>
+                        <h4 class="number"><span class="count">80</span>% <span class="text">AI Automation</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section Start -->
+    <section class="testimonials-section testimonials-1 section-padding section-bg-2 fix">
+        <div class="random-shape float-bob-x">
+            <img src="assets/img/shape/random-shape.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <span class="wow fadeInUp"><img src="assets/img/shape/star-2.png" alt="img">Technical Skills</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">My <span>Expertise</span></h2>
+                    </div>
+                    <div class="reviews wow fadeInUp" data-wow-delay=".4s">
+                        <h2 class="count">5+</h2>
+                        <div class="item">
+                            <span>Years of Development Experience</span>
+                            <div class="star">
+                                <i class="fa-solid fa-code"></i>
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <i class="fa-solid fa-database"></i>
+                                <i class="fa-solid fa-mobile-alt"></i>
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonials-wrapper">
+                        <div class="swiper testimonial-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box-items">
+                                        <div class="client-info">
+                                            <div class="tech-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fab fa-js-square" style="font-size: 30px; color: white;"></i>
+                                            </div>
+                                            <div class="client-content">
+                                                <h5>JavaScript</h5>
+                                                <p>Core Language</p>
+                                            </div>
+                                        </div>
+                                        <div class="testi-content">
+                                            <div class="icon">
+                                                <span style="font-size: 24px; font-weight: bold; color: #667eea;">90%</span>
+                                            </div>
+                                            <p>
+                                                Advanced proficiency in modern JavaScript, ES6+, asynchronous programming, and building dynamic web applications with clean, maintainable code.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box-items">
+                                        <div class="client-info">
+                                            <div class="tech-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #3178c6 0%, #235a97 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fab fa-js-square" style="font-size: 30px; color: white;"></i>
+                                            </div>
+                                            <div class="client-content">
+                                                <h5>TypeScript</h5>
+                                                <p>Type-Safe Development</p>
+                                            </div>
+                                        </div>
+                                        <div class="testi-content">
+                                            <div class="icon">
+                                                <span style="font-size: 24px; font-weight: bold; color: #3178c6;">85%</span>
+                                            </div>
+                                            <p>
+                                                Strong expertise in TypeScript for building scalable applications with static typing, interfaces, and enhanced developer experience.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box-items">
+                                        <div class="client-info">
+                                            <div class="tech-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #61dafb 0%, #21a9c7 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fab fa-react" style="font-size: 30px; color: white;"></i>
+                                            </div>
+                                            <div class="client-content">
+                                                <h5>React</h5>
+                                                <p>Frontend Framework</p>
+                                            </div>
+                                        </div>
+                                        <div class="testi-content">
+                                            <div class="icon">
+                                                <span style="font-size: 24px; font-weight: bold; color: #61dafb;">80%</span>
+                                            </div>
+                                            <p>
+                                                Proficient in React ecosystem including hooks, context, state management, and building responsive user interfaces with modern best practices.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box-items">
+                                        <div class="client-info">
+                                            <div class="tech-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #68a063 0%, #4f7c4a 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fab fa-node-js" style="font-size: 30px; color: white;"></i>
+                                            </div>
+                                            <div class="client-content">
+                                                <h5>Node.js</h5>
+                                                <p>Backend Development</p>
+                                            </div>
+                                        </div>
+                                        <div class="testi-content">
+                                            <div class="icon">
+                                                <span style="font-size: 24px; font-weight: bold; color: #68a063;">75%</span>
+                                            </div>
+                                            <p>
+                                                Experienced in Node.js for server-side development, RESTful APIs, database integration, and building scalable backend systems.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box-items">
+                                        <div class="client-info">
+                                            <div class="tech-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fas fa-robot" style="font-size: 30px; color: white;"></i>
+                                            </div>
+                                            <div class="client-content">
+                                                <h5>AI Automation</h5>
+                                                <p>Intelligent Solutions</p>
+                                            </div>
+                                        </div>
+                                        <div class="testi-content">
+                                            <div class="icon">
+                                                <span style="font-size: 24px; font-weight: bold; color: #ff6b6b;">80%</span>
+                                            </div>
+                                            <p>
+                                                Skilled in AI automation, machine learning integration, and building intelligent systems that streamline workflows and enhance productivity.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-dot text-center">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section fix fix">
+       <div class="bg-shape">
+        <img src="assets/img/footer/bg-shape.png" alt="img">
+       </div>
+       <div class="mycustom-marque">
+              <div class="scrolling-wrap style-2">
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+           </div>
+       </div>
+        <div class="container">
+            <div class="footer-widget-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-item">
+                            <a href="index.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+                                <img src="assets/img/logo/sg_logo_white.svg" alt="img">
+                            </a>
+                            <ul class="footer-list-items wow fadeInUp" data-wow-delay=".5s">
+                                <li>
+                                    <a href="about.html">ABOUT ME</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">PORTFOLIO</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT ME</a>
+                                </li>
+                            </ul>
+                            <ul class="social-icon wow fadeInUp" data-wow-delay=".3s">
+                                <li>
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/Simba26git" target="_blank">GitHub</a>
+                                </li>
+                                <li>
+                                   <i class="fa-brands fa-linkedin-in"></i>
+                                    <a href="https://www.linkedin.com/in/simbarashe-gunundu-02320a250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=and" target="_blank">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        Copyright © <span>Simbarashe Gunundu</span>
+                    </p>
+                    <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="contact.html">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Typed Js >>-->
+    <script src="assets/js/typed.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
